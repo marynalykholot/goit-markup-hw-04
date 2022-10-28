@@ -192,10 +192,24 @@ margin-left: auto;
 
 /* HERO */
 .hero {
+max-width: 1600px;
+height: 600px;
+margin-left: auto;
+margin-right: auto;
 padding-top: 200px;
 padding-bottom: 200px;
-background-color: var(--dark-bgc);
 text-align: center;
+
+background-color: var(--dark-bgc);
+background-image: 
+linear-gradient(
+  to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+url(../images/background-hero.jpg);
+background-repeat: no-repeat;
+background-position: center;
+
 }
 
 
