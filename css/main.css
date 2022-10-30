@@ -11,6 +11,8 @@
   --container-bg: #eeeeee;
   --border-color: #ECECEC;
   --icon-text: #AFB1B8;
+  --icon-bcg: rgba(255, 255, 255, 0.1);
+
 
 }
 
@@ -379,7 +381,10 @@ padding: 10px 32px;
   background-color: var(--white);
   border-radius: 4px;
 
+ 
+
 }
+
   
   
   
@@ -518,10 +523,37 @@ border-color: var(--accent-color);
 }
 
 .footer-icon{
+  
   margin-top: 20px;
+  margin-right: 10px;
   width: 44px;
   height: 44px;
 }
+
+.footer-icon svg{
+  fill: var(--white)
+}
+
+.footer-icon .team-icon{
+  
+  background-color: var(--icon-bcg);
+}
+
+.footer-icon .team-icon:hover,
+.footer-icon .team-icon:focus{
+  background-color: var(--accent-color);
+}
+
+
+/* .footer-contacts{
+  display: inline-block;
+} */
+
+
+/* .footer-icon .team-icon{
+  justify-content: space-between;
+} */
+
 
 .logo.logo-nav-footer{
   display: inline-block;
@@ -534,9 +566,11 @@ border-color: var(--accent-color);
 
 .footer-list{
   display: flex;
+  
  
 }
 .address-box{
+  
   margin-right: 70px;
 }
  
@@ -593,6 +627,8 @@ border-color: var(--accent-color);
   letter-spacing: 0.03em;
 }
 li.address-item{
+  
+  padding: 0;
   margin-bottom: 9px;
 }
 
