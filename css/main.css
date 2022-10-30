@@ -10,6 +10,8 @@
   --black: #000000;
   --container-bg: #eeeeee;
   --border-color: #ECECEC;
+  --icon-text: #AFB1B8;
+
 }
 
 /* Головна сторінка */
@@ -181,8 +183,7 @@ margin-left: auto;
 
 .auts-nav.list .link{
   display: flex;
- align-items: center
-  ;
+  align-items: center;
   margin-left: 30px;
   color: var(--additional-ctext);
   font-weight: 500;
@@ -275,12 +276,25 @@ padding: 10px 32px;
 
     .benefits-blok{
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
 } 
 
 .benefits-item:not(:last-child){
   margin-right: 30px;
 }
+
+.benefits-icon{
+  width: 270px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  margin-bottom: 30px;
+}
+
 
 
 
@@ -348,7 +362,12 @@ padding: 10px 32px;
 
 /*OUR TEAM*/
 .comand-container .list{ 
-  display: flex;
+  display: flex;}
+
+
+  .comand-description{
+  padding: 30px 32px;
+
   
 }
 
@@ -408,15 +427,118 @@ margin-bottom: 10px;
   text-align: center;
 }
 
+.team-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-color: var(--white);
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+
+  fill: #AFB1B8;
+}
+
+.team-icon:hover svg, 
+.team-icon:focus svg  {
+  fill: var(--white);
+}
+
+.team-icon:hover, 
+.team-icon:focus {
+  background-color: var(--accent-color);
+}
+
+.team-list.list{
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 0;
+  margin-top: 16px;
+}
+
+/* CLIENT */
+.title-client{
+  color: var(--main-ctext);
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+margin-bottom: 50px;
+letter-spacing: 0.03em;
+
+
+}
+
+
+.list-client{
+  display: flex;
+
+
+}
+
+
+.icon-client{
+  display: flex;
+    width: 160px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+   
+
+}
+.item-client .icon-client:hover,
+.icon-client .icon-client:focus {
+fill: var(--accent-color);
+border-color: var(--accent-color);
+}
+
+.item-client:not(:last-child){
+  margin-right: 30px;
+  
+
+}
+
 /* FOOTER */
+
+.footer-text{
+  color: var(--white);
+  margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-icon{
+  margin-top: 20px;
+  width: 44px;
+  height: 44px;
+}
 
 .logo.logo-nav-footer{
   display: inline-block;
   margin-bottom: 20px;
 }
+.container-footer{
+  display: flex;
+  align-items: baseline;
+}
 
-
-
+.footer-list{
+  display: flex;
+ 
+}
+.address-box{
+  margin-right: 70px;
+}
  
 
 .section-footer {
