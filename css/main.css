@@ -264,9 +264,16 @@ padding: 10px 32px;
 
 .hero-button:hover {
   background-color: #188ce8;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
 }
 .hero-button:focus {
-  color: #2196f3;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+  0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.12); 
+  /* color: #2196f3;  */
 }
 
 /* BENEFITS */
@@ -381,7 +388,12 @@ padding: 10px 32px;
   background-color: var(--white);
   border-radius: 4px;
 
- 
+box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+
+
 
 }
 
@@ -695,6 +707,10 @@ li.mail-item{
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+  0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  
   background-color: var(--accent-color);
   color: var(--white);
 }
@@ -729,6 +745,19 @@ li.mail-item{
 
  margin-right: 30px;
  margin-bottom: 30px;
+}
+.portfolio-img{
+  display: block;
+}
+
+.portfolio-img:hover,
+.portfolio-img:focus{
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+
+
 }
 
 /* CARD */
