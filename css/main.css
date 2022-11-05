@@ -785,19 +785,47 @@ box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
 
 }
 
-.overlay-post{
+
+
+.overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: transform 250ms var(--cubic) ;
+
   position: absolute;
   top: 0;
   left :0;
+  width: 100%;
+  height: 100%;
 }
+.overlay-post{
+font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.portfolio-img:hover .overlay,
+.portfolio-img:focus .overlay {
+  transform: translateY(0);
+  
+}
+
+
 
 .card-overlay{
   position: relative;
+  overflow: hidden;
 }
 /* CARD */
 
 .card-text{
- 
+  
   padding: 20px 24px;
   border-left: 1px solid var(--container-bg);
   border-right: 1px  solid var(--container-bg);
@@ -845,19 +873,16 @@ transform: translate(-50%, -50%);
   z-index: 1000;
 }
 
-/* .backdrop.is-hidden .modal{
-transform: scale(1.25);
 
-} */
 
 .close-btn{
-display: flex;
-align-items: center;
-justify-content:  center;
+  display: flex;
+  align-items: center;
+  justify-content:  center;
 
-position: absolute;
-top: 8px;
-right: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
 
   width: 30px;
